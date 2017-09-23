@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_sales'
-  s.version     = '3.1.0'
+  s.version     = '3.2.0'
   s.summary     = 'Add sales prices to products'
   s.description = 'Add sales prices to products'
   s.required_ruby_version = '>= 2.1.0'
@@ -17,8 +17,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.0'
-  s.add_dependency 'spree_frontend', '~> 3.1.0'
+  s.add_dependency 'spree_core', '>= 3.1.0', '< 4.0'
+  s.add_dependency 'spree_frontend', '>= 3.1.0', '< 4.0'
+  s.add_runtime_dependency 'spree_extension'
   s.add_dependency 'date_validator'
 
 
